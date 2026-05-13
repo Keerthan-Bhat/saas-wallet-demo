@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallet — SaaS Landing Page</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo" aria-label="Wallet home">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <rect width="18" height="18" rx="4" fill="#7C5CFC"/>
+          <path d="M4 9h10M9 4v10" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>Wallet</span>
+      </a>
+      <nav class="navbar__links" aria-label="Primary navigation">
+        <a href="#features" class="navbar__link">Features</a>
+        <a href="#testimonial" class="navbar__link">Reviews</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="btn btn--ghost" onclick="openModal('signup')">Sign up</button>
+        <button class="btn btn--primary" onclick="openModal('signin')">Sign in</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════ HERO ════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero__inner">
+        <div class="hero__content animate-fade-up">
+          <h1 id="hero-heading" class="hero__title">
+            SaaS Landing<br />Page Template
+          </h1>
+          <p class="hero__subtitle">
+            Store all your cards, passes, and payments in one secure place. No fees, no hassle — just a smarter way to manage your money.
+          </p>
+          <a href="#features" class="btn btn--cta">Get started</a>
+        </div>
+        <div class="hero__mockup animate-fade-up animate-delay-200" aria-hidden="true">
+          <div class="mockup-card mockup-card--top-right">
+            <div class="mockup-card__header">
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-card__grid">
+              <!-- Donut chart placeholder -->
+              <div class="mockup-chart-donut">
+                <svg viewBox="0 0 60 60" width="60" height="60">
+                  <circle cx="30" cy="30" r="22" fill="none" stroke="#2a2a3a" stroke-width="10"/>
+                  <circle cx="30" cy="30" r="22" fill="none" stroke="#7C5CFC" stroke-width="10"
+                    stroke-dasharray="80 58" stroke-linecap="round" transform="rotate(-90 30 30)"/>
+                  <circle cx="30" cy="30" r="22" fill="none" stroke="#f5c542" stroke-width="10"
+                    stroke-dasharray="35 103" stroke-dashoffset="-80" stroke-linecap="round" transform="rotate(-90 30 30)"/>
+                </svg>
+              </div>
+              <!-- Line chart placeholder -->
+              <div class="mockup-chart-line">
+                <svg viewBox="0 0 80 40" width="80" height="40">
+                  <polyline points="0,35 15,28 30,32 45,18 60,22 75,10" fill="none" stroke="#7C5CFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="0,38 15,35 30,36 45,30 60,28 75,22" fill="none" stroke="#444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <!-- Bar chart placeholder -->
+              <div class="mockup-chart-bar">
+                <svg viewBox="0 0 80 40" width="80" height="40">
+                  <rect x="4" y="20" width="8" height="20" rx="2" fill="#7C5CFC" opacity="0.7"/>
+                  <rect x="16" y="10" width="8" height="30" rx="2" fill="#f5c542"/>
+                  <rect x="28" y="15" width="8" height="25" rx="2" fill="#7C5CFC" opacity="0.5"/>
+                  <rect x="40" y="5" width="8" height="35" rx="2" fill="#7C5CFC"/>
+                  <rect x="52" y="18" width="8" height="22" rx="2" fill="#f5c542" opacity="0.6"/>
+                  <rect x="64" y="12" width="8" height="28" rx="2" fill="#7C5CFC" opacity="0.8"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ LOGOS BAR ════════════════════════════════ -->
+    <section class="logos" aria-label="Trusted by leading companies">
+      <div class="container logos__inner">
+        <span class="logos__item">accenture</span>
+        <span class="logos__item logos__item--apple">
+          <svg width="14" height="17" viewBox="0 0 14 17" fill="currentColor" aria-hidden="true">
+            <path d="M13.27 12.48c-.27.62-.4.9-.75 1.44-.49.74-1.18 1.67-2.04 1.68-.76.01-1-.49-2.07-.49-1.08 0-1.34.5-2.1.5-.86 0-1.51-.87-2-1.6C2.74 12.1 2.3 9.8 3.1 8.18c.57-1.14 1.6-1.81 2.67-1.81.99 0 1.62.5 2.44.5.8 0 1.28-.5 2.44-.5 1 0 1.89.55 2.46 1.5-2.16 1.18-1.8 4.26.16 4.61zM9.4 4.5c.43-.55.75-1.33.63-2.13C9.35 2.44 8.62 2.89 8.1 3.5c-.48.56-.84 1.35-.7 2.12.74.05 1.5-.42 2-.12z"/>
+          </svg>
+        </span>
+        <span class="logos__item">Microsoft</span>
+        <span class="logos__item">Google</span>
+        <span class="logos__item">BearingPoint.</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ DASHBOARD PREVIEW ════════════════════════ -->
+    <section class="preview" aria-label="Product dashboard preview">
+      <div class="container">
+        <div class="preview__frame">
+          <div class="preview__dashboard">
+            <!-- Sidebar -->
+            <aside class="dash-sidebar">
+              <div class="dash-logo">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <rect width="14" height="14" rx="3" fill="#7C5CFC"/>
+                  <path d="M3 7h8M7 3v8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span>Wallet</span>
+              </div>
+              <nav class="dash-nav">
+                <a href="#" class="dash-nav__item dash-nav__item--active">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><rect x="1" y="1" width="4" height="4" rx="1" fill="currentColor"/><rect x="7" y="1" width="4" height="4" rx="1" fill="currentColor" opacity=".5"/><rect x="1" y="7" width="4" height="4" rx="1" fill="currentColor" opacity=".5"/><rect x="7" y="7" width="4" height="4" rx="1" fill="currentColor" opacity=".3"/></svg>
+                  Dashboard
+                </a>
+                <a href="#" class="dash-nav__item">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.2"/></svg>
+                  Analytics
+                </a>
+                <a href="#" class="dash-nav__item">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4h8M2 8h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  Transactions
+                </a>
+              </nav>
+            </aside>
+            <!-- Main content -->
+            <div class="dash-main">
+              <div class="dash-header">
+                <span class="dash-greeting">Hello, Johnny ✨</span>
+                <div class="dash-balance">
+                  <span class="dash-balance__label">Total balance</span>
+                  <span class="dash-balance__amount">121,00€</span>
+                </div>
+              </div>
+              <div class="dash-cards">
+                <div class="dash-card dash-card--purple">
+                  <span class="dash-card__label">Income</span>
+                  <span class="dash-card__value">+€2,400</span>
+                  <svg class="dash-card__trend" viewBox="0 0 40 20" width="40" height="20"><polyline points="0,18 10,14 20,16 30,8 40,4" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/></svg>
+                </div>
+                <div class="dash-card dash-card--dark">
+                  <span class="dash-card__label">Spending</span>
+                  <span class="dash-card__value">-€890</span>
+                  <svg class="dash-card__trend" viewBox="0 0 40 20" width="40" height="20"><polyline points="0,4 10,8 20,6 30,14 40,18" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/></svg>
+                </div>
+                <div class="dash-card dash-card--yellow">
+                  <span class="dash-card__label">Savings</span>
+                  <span class="dash-card__value">€5,120</span>
+                  <svg class="dash-card__trend" viewBox="0 0 40 20" width="40" height="20"><polyline points="0,15 10,12 20,13 30,7 40,3" fill="none" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/></svg>
+                </div>
+              </div>
+              <div class="dash-charts">
+                <div class="dash-chart-block">
+                  <span class="dash-chart-block__title">Spending</span>
+                  <svg viewBox="0 0 100 100" width="80" height="80">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#1e1e2e" stroke-width="18"/>
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#7C5CFC" stroke-width="18"
+                      stroke-dasharray="100 152" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#f5c542" stroke-width="18"
+                      stroke-dasharray="60 192" stroke-dashoffset="-100" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#3d3d5c" stroke-width="18"
+                      stroke-dasharray="40 212" stroke-dashoffset="-160" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+                  </svg>
+                </div>
+                <div class="dash-chart-block dash-chart-block--wide">
+                  <span class="dash-chart-block__title">Monthly overview</span>
+                  <svg viewBox="0 0 160 70" width="100%" height="70">
+                    <defs>
+                      <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#7C5CFC" stop-opacity="0.4"/>
+                        <stop offset="100%" stop-color="#7C5CFC" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <polygon points="0,65 0,45 20,38 40,42 60,28 80,32 100,18 120,24 140,12 160,8 160,65" fill="url(#areaGrad)"/>
+                    <polyline points="0,45 20,38 40,42 60,28 80,32 100,18 120,24 140,12 160,8"
+                      fill="none" stroke="#7C5CFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline points="0,55 20,52 40,56 60,48 80,50 100,42 120,46 140,38 160,34"
+                      fill="none" stroke="#444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════ FEATURES ══════════════════════════════ -->
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <h2 class="sr-only" id="features-heading">Features</h2>
+        <div class="features__grid">
+
+          <article class="feature-card animate-fade-up">
+            <div class="feature-card__icon feature-card__icon--blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="5" width="20" height="14" rx="3" stroke="white" stroke-width="1.8"/>
+                <path d="M2 10h20" stroke="white" stroke-width="1.8"/>
+                <rect x="5" y="14" width="4" height="2" rx="1" fill="white"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Customizable card</h3>
+            <p class="feature-card__desc">
+              Connect your card to your wallet and track your expenses with a fully customizable interface.
+            </p>
+          </article>
+
+          <article class="feature-card animate-fade-up animate-delay-150">
+            <div class="feature-card__icon feature-card__icon--purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" stroke="white" stroke-width="1.8"/>
+                <path d="M12 7v5l3 3" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">No payment fee</h3>
+            <p class="feature-card__desc">
+              Manage your payment with no hidden fees. Use the wallet to transfer and store with zero fee payments.
+            </p>
+          </article>
+
+          <article class="feature-card animate-fade-up animate-delay-300">
+            <div class="feature-card__icon feature-card__icon--yellow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 7h7v10H3zM14 3h7v14h-7z" stroke="#1a1a2e" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M7 17v4M17 17v4" stroke="#1a1a2e" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">All in one place</h3>
+            <p class="feature-card__desc">
+              The right place to bring all your credit and debit cards, boarding passes & more.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ TESTIMONIAL ══════════════════════════════ -->
+    <section class="testimonial" id="testimonial" aria-labelledby="testimonial-heading">
+      <div class="container">
+        <h2 class="sr-only" id="testimonial-heading">Customer testimonial</h2>
+        <div class="testimonial__card animate-fade-up">
+          <blockquote class="testimonial__quote">
+            "Wallet is a great product! All of my most important information is there — credit cards, transit cards, boarding passes, tickets, and more. And I don't need to worry because it's all in one place thanks!"
+          </blockquote>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <circle cx="18" cy="18" r="18" fill="#c8a882"/>
+                <circle cx="18" cy="14" r="7" fill="#a07850"/>
+                <ellipse cx="18" cy="30" rx="11" ry="8" fill="#a07850"/>
+              </svg>
+            </div>
+            <div class="testimonial__info">
+              <span class="testimonial__name">Sarah Johnson</span>
+              <div class="testimonial__stars" role="img" aria-label="5 out of 5 stars">
+                <span class="star star--filled" aria-hidden="true">★</span>
+                <span class="star star--filled" aria-hidden="true">★</span>
+                <span class="star star--filled" aria-hidden="true">★</span>
+                <span class="star star--filled" aria-hidden="true">★</span>
+                <span class="star star--half" aria-hidden="true">★</span>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════ CTA SECTION ════════════════════════════ -->
+    <section class="cta" id="contact" aria-labelledby="cta-heading">
+      <div class="container cta__inner">
+        <div class="cta__content animate-fade-up">
+          <h2 id="cta-heading" class="cta__title">Questions?<br />Let's talk</h2>
+          <p class="cta__desc">
+            Contact us through our chat line and our amazing team is ready to help!
+          </p>
+          <button class="btn btn--cta" onclick="openModal('signup')">Get started</button>
+        </div>
+        <div class="cta__illustration animate-fade-up animate-delay-200" aria-hidden="true">
+          <div class="cta-card">
+            <div class="cta-card__inner">
+              <!-- Credit card mockup -->
+              <div class="cta-mini-card cta-mini-card--back">
+                <div class="cta-mini-card__chip"></div>
+                <div class="cta-mini-card__line"></div>
+              </div>
+              <div class="cta-mini-card cta-mini-card--front">
+                <svg class="cta-mini-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="5" width="20" height="14" rx="3" fill="#7C5CFC"/>
+                  <path d="M2 10h20" stroke="#fff" stroke-width="1.5"/>
+                  <rect x="5" y="14" width="4" height="2" rx="1" fill="rgba(255,255,255,0.6)"/>
+                </svg>
+                <div class="cta-mini-card__stars">
+                  <span>★★★★</span>
+                  <span class="cta-mini-card__num">9204</span>
+                </div>
+              </div>
+              <!-- Floating sparkles -->
+              <span class="cta-sparkle cta-sparkle--1">✦</span>
+              <span class="cta-sparkle cta-sparkle--2">✦</span>
+              <span class="cta-sparkle cta-sparkle--3">✦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════ FOOTER ═════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="navbar__logo footer__logo" aria-label="Wallet home">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <rect width="18" height="18" rx="4" fill="#7C5CFC"/>
+            <path d="M4 9h10M9 4v10" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Wallet</span>
+        </a>
+        <p class="footer__copy">© Wallet 2022</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#" class="footer__link">Privacy policy</a>
+        <a href="#" class="footer__link">Cookies policy</a>
+        <a href="#" class="footer__link">Terms of use</a>
+      </nav>
+      <div class="footer__newsletter">
+        <p class="footer__newsletter-label">Updates right in your inbox</p>
+        <form class="footer__form" onsubmit="return false;" aria-label="Newsletter signup">
+          <label for="email-input" class="sr-only">Email address</label>
+          <input
+            id="email-input"
+            type="email"
+            class="footer__input"
+            placeholder="Email address"
+            autocomplete="email"
+          />
+          <button type="submit" class="footer__submit" aria-label="Subscribe">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════ MODALS ══════════════════════════════ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal()" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Sign In -->
+      <div class="modal__panel" id="panel-signin">
+        <div class="modal__logo">
+          <svg width="24" height="24" viewBox="0 0 18 18" fill="none"><rect width="18" height="18" rx="4" fill="#7C5CFC"/><path d="M4 9h10M9 4v10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Wallet</span>
+        </div>
+        <h2 id="modal-title" class="modal__title">Welcome back</h2>
+        <p class="modal__subtitle">Sign in to your Wallet account</p>
+        <div class="modal__form">
+          <div class="modal__field">
+            <label class="modal__label">Email</label>
+            <input type="email" class="modal__input" placeholder="you@example.com" />
+          </div>
+          <div class="modal__field">
+            <label class="modal__label">Password</label>
+            <input type="password" class="modal__input" placeholder="••••••••" />
+          </div>
+          <button class="btn btn--primary modal__submit" onclick="handleAuth('signin')">Sign in</button>
+        </div>
+        <p class="modal__switch">Don't have an account? <button class="modal__link" onclick="switchPanel('signup')">Sign up</button></p>
+      </div>
+
+      <!-- Sign Up -->
+      <div class="modal__panel modal__panel--hidden" id="panel-signup">
+        <div class="modal__logo">
+          <svg width="24" height="24" viewBox="0 0 18 18" fill="none"><rect width="18" height="18" rx="4" fill="#7C5CFC"/><path d="M4 9h10M9 4v10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Wallet</span>
+        </div>
+        <h2 class="modal__title">Create account</h2>
+        <p class="modal__subtitle">Get started with Wallet for free</p>
+        <div class="modal__form">
+          <div class="modal__field">
+            <label class="modal__label">Full name</label>
+            <input type="text" class="modal__input" placeholder="Jane Smith" />
+          </div>
+          <div class="modal__field">
+            <label class="modal__label">Email</label>
+            <input type="email" class="modal__input" placeholder="you@example.com" />
+          </div>
+          <div class="modal__field">
+            <label class="modal__label">Password</label>
+            <input type="password" class="modal__input" placeholder="••••••••" />
+          </div>
+          <button class="btn btn--primary modal__submit" onclick="handleAuth('signup')">Create account</button>
+        </div>
+        <p class="modal__switch">Already have an account? <button class="modal__link" onclick="switchPanel('signin')">Sign in</button></p>
+      </div>
+
+      <!-- Success state -->
+      <div class="modal__panel modal__panel--hidden" id="panel-success">
+        <div class="modal__success-icon">✓</div>
+        <h2 class="modal__title">You're in!</h2>
+        <p class="modal__subtitle">Welcome to Wallet. Your account is ready.</p>
+        <button class="btn btn--primary modal__submit" onclick="closeModal()">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
